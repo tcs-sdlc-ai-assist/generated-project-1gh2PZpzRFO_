@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FAFAF9;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F5F5F4;
+  --color-text: #1C1917;
+  --color-text-muted: #78716C;
+  --color-border: #E7E5E4;
+  --color-accent: #4F46E5;
+  --color-accent-fg: #FFFFFF;
+  --color-success: #059669;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+  --color-focus: #6366F1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1C1917;
+    --color-surface: #292524;
+    --color-surface-2: #44403C;
+    --color-text: #FAFAF9;
+    --color-text-muted: #A8A29E;
+    --color-border: #57534E;
+    --color-accent: #818CF8;
+    --color-accent-fg: #1C1917;
+    --color-focus: #818CF8;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Geist', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
